@@ -32,7 +32,7 @@ export function Footer() {
                               </div>
                         </div>
                         <div className="text-center">
-                              <p className="text-xl text-white">Copyright © 2020 Jantra United FC. All rights reserved </p>
+                              <p className="text-xl text-white">Copyright © 2024 Jantra United FC. All rights reserved </p>
                         </div>
                   </div>
             </footer>

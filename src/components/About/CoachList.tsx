@@ -41,13 +41,30 @@ export function CoachList() {
                                     <Image src={item.image} alt={item.name} width={220} height={276} className="rounded-md" />
                                     <div className="flex flex-col justify-center gap-3">
                                           <h5 className="text-[28px] font-semibold text-primary">Pelatih</h5>
-                                          <div className="text-white text-xl leading-relaxed">
-                                          <p>Nama: {item.name}</p>
-                                          <p>Tempat Tanggal Lahir: {item.birthPlace}</p>
-                                          <p>Usia: {item.age}</p>
-                                          <p>Tinggi: {item.height}</p>
-                                          <p>Lisensi Pelatih: {item.license}</p>
-                                          </div>
+                                          <table className="table-fixed text-lg text-white">
+                                                <tbody>
+                                                      <tr>
+                                                            <td>Nama</td>
+                                                            <td>: {item.name}</td>
+                                                      </tr>
+                                                      <tr>
+                                                            <td>Tempat, Tanggal, Lahir&nbsp;&nbsp;</td>
+                                                            <td>: {item.birthPlace}</td>
+                                                      </tr>
+                                                      <tr>
+                                                            <td>Usia</td>
+                                                            <td>: {item.age}</td>
+                                                      </tr>
+                                                      <tr>
+                                                            <td>Tinggi</td>
+                                                            <td>: {item.height}</td>
+                                                      </tr>
+                                                      <tr>
+                                                            <td>Lisensi Pelatih</td>
+                                                            <td>: {item.license}</td>
+                                                      </tr>
+                                                </tbody>
+                                          </table>
                                     </div>
                               </div>
                         ))}
